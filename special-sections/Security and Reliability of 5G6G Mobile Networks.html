@@ -1,0 +1,268 @@
+<!---------e!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">------------>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><meta name="description" content="Special Section on 5G/6G Mobile Networks, IEEE Transaction on Reliability">
+<meta name="keyword" content="Special Section on Reliability Prediction and Maintenance for Modern Large Systems, IEEE Transaction on Reliability, Prediction,Maintenance, T-Rel, Modern Large Systems">
+
+<title>Trel-Special Section on 5G/6G Mobile Networks</title>
+<link rel="stylesheet" type="text/css" href="lib/main.css">
+<link rel="stylesheet" type="text/css" href="lib/custom.css"/>
+<script type="text/javascript" src="lib/comm.js"></script>
+<script type="text/javascript">
+var ApTime,nAlpha;
+<!------------------------------------------------------------>
+function sel(oObj,nNum) {
+   oMyParent=oObj.parentNode;
+   oTopParent=oMyParent.parentNode;
+   nItem=oTopParent.getElementsByTagName(oMyParent.tagName).length;
+   for (i=0;i<nItem;i++) {
+       oTopParent.getElementsByTagName(oMyParent.tagName)[i].getElementsByTagName(oObj.tagName)[0].className='';
+   }
+   oObj.className='sel';
+   oObj.blur();
+   for (i=0;i<2;i++) {
+       $('container_'+i).className='hide';
+       }
+   $('container_'+nNum).className='show';
+   nAlpha=0;
+   fadeing(nNum);
+   return false;
+}
+<!------------------------------------------------------------>
+function fadeing(nNum) {
+  nAlpha+=10;
+  if (document.all)
+     $('container_'+nNum).style.filter='alpha(opacity='+nAlpha+')';
+  else
+     $('container_'+nNum).style.opacity=nAlpha/100;
+  if (nAlpha>=100)
+     clearTimeout(ApTime);
+  else
+     ApTime=setTimeout('fadeing('+nNum+')',60);
+}
+</script>
+<!-------------------------Body---------------------------------->
+</head>
+<body bgcolor="#FFFFFF">
+<style>
+* {margin: 0;padding: 0;}
+body {
+	background: url(https://pages-preview.herokuapp.com/images/bg-1.jpg) #eeeeee;
+}
+</style>
+<!---------------------------------------------------------------->
+
+<!--------------------------Banner-------------------------------->
+<!-- <div id="mid">
+<img src="lib/Banner.png" width="890" border="0">
+</div> -->
+<article>
+<header>
+	<a href="index.html">
+		<img class="img-fluid" src="index_files/Header.png"
+				alt="IEEE Transactions on Reliability Review Policy"/>
+	</a>
+</header>
+<!---------------------------------------------------------------->
+
+<div id="middle">
+<div id="main">
+<!-------------------------Menu Bar----------------------------------
+<div id="menu">
+<ul>
+
+<li><a href="index.html" title="Home IWSC'16" class="sel" onclick="return sel(this,0);">
+    Home
+    </a></li>
+</ul>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="container_0" class="show">
+<div align="center">
+<br>
+<font size="5" face="Georgia"><i>IEEE Transactions on Reliability</i></font><br>
+<br>
+<h1>
+    Special Section on Security and Reliability of 5G/6G Mobile Networks
+</h1>
+<br>
+<h1>Call for Papers</h1>
+<br>
+</div>
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Background</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+As the 5G mobile network has been rolling out in recent years, its new network architecture, technologies, and security mechanisms have been widely deployed, including SBA (Service-based Architecture), network slicing, NR (New Radio), 5G-AKA (Authentication and Key Agreement), to name a few. Many exciting applications are thus going to emerge, such as V2X (Vehicle-to-Everything), VR (Virtual Reality) and smart factory, but the examination of the 5G mobile network for new practical challenges and concerns from the security and reliability aspects (e.g., zero-trust goals and ultrahigh reliability requirement from smart factory) is still at the early phase. As the largest wireless network infrastructure, the security and reliability of the 5G mobile network are extremely important, especially that national security may suffer from its failure. Furthermore, the standardization of the 6G mobile network is going to start in the near future; it can benefit from the new insights and lessons learned from 5G research studies.
+</font>
+</p>
+<br>
+<p>
+<font size="3" face="Georgia">
+To make 5G/6G mobile networks secure and reliable, IEEE Transactions on Reliability (TRel) solicits original work that makes novel theoretical or practical contributions to enhance the security and reliability of the 5G mobile network. In addition, the research studies about newly proposed security and reliability mechanisms for potential 6G architecture and technologies are also welcome. Papers will be reviewed and selected based on their innovation, technical correctness, presentation, and practical relevance.
+</font>
+</p>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Topics</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+    Submissions related to the following topics from the security and reliability aspects are encouraged. However, others relevant to security and reliability of 5G/6G mobile networks are also welcome.
+ 
+</font>
+</p>
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>5G NR (New Radio)</li>
+<li>5G private network</li>
+<li>5G Internet of Things (IoT)</li>
+<li>5G edge/fog computing and networking</li>
+<li>5G mobile sensing and applications</li>
+<li>5G localization and location-based services</li>
+<li>5G O-RAN (Open Radio Access Network)</li>
+<li>5G network slicing and virtualization</li>
+<li>5G network management and orchestration</li>
+<li>5G/6G core network</li>
+<li>5G/6G RAN (Radio Access Network)</li>
+<li>5G/6G network architecture</li>
+<li>5G/6G network/security protocols</li>
+<li>AI/ML (Artificial Intelligence/Machine Learning)  in 5G/6G networks</li>
+<li>CPS (Cyber-Physical Systems)</li>
+<li>Autonomous vehicles</li>
+<li>Communications over sky/sea/space</li>
+<li>Extreme and ubiquitous communications</li>
+<li>Intelligent networking between humans and things</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Submission Information</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="2" face="Georgia">
+We welcome high quality submissions that are original work, not published, and not currently submitted elsewhere. We also encourage extensions to conference papers, unless prohibited by copyright, if there is a significant difference in technical content. Improvements such as adding a new case study or including a description of additional related studies do not satisfy this requirement. The overlap between each submission and other articles, including the authors' own papers, should be less than 30%. Each submission must conform to the double column single spaced format of printed articles in the IEEE Transactions on Reliability with all figures and tables embedded in the paper, rather than listed at the end or in the appendix. More information on how to prepare and submit manuscripts can be found at <a href="https://mc.manuscriptcentral.com/tr-ieee" style="color: blue;" target="_blank">http://rs.ieee.org/transactions-on-reliability.html</a>.
+
+</font>
+</p>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Important Dates</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<table border="0">
+<!------------------------------------------------------------------------>
+    <tr>
+        <td><li>Submission Deadline:</li></td><td>10/01/2023, rolling review and publication</td>
+    </tr>
+    <tr>
+        <td><li>Publication Date:</li></td><td>Rolling</td>
+    </tr>
+<!------------------------------------------------------------------------>
+</tbody></table>
+</font>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Editor-in-Chief</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>Professor <a href="https://dsns.cs.nycu.edu.tw/ssp.php" style="color: blue;" target="_blank">Winston Shieh</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: shiuhpyng@ieee.org</li>
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Guest Editors</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+
+<li>Associate Professor <a href="https://people.cs.nctu.edu.tw/~chiyuli/" style="color: blue;" target="_blank">Chi-Yu Li</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: chiyuli@cs.nctu.edu.tw</li>
+<li>Assistant Professor <a href="https://www.cse.msu.edu/~ghtu/" style="color: blue;" target="_blank">Guan-Hua Tu</a>
+    <br> Department of Computer Science and Engineering, Michigan State University, USA
+    <br> Email: ghtu@msu.edu</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+</div>
+
+</div></div></div>
+
+<footer>
+	<div class="container">
+		<small>
+			&copy; Copyright 2022 IEEE T-Rel - All rights reserved.
+		</small>
+	</div>
+</footer>
+</article>
+</body></html>

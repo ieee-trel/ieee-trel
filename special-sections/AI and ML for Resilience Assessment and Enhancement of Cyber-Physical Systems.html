@@ -1,0 +1,269 @@
+<!---------e!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">------------>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><meta name="description" content="Special Section on Enterprise Cybersecurity and Threat Intelligence at Scale, IEEE Transaction on Reliability">
+<meta name="keyword" content="Special Section on Reliability Prediction and Maintenance for Modern Large Systems, IEEE Transaction on Reliability, Prediction,Maintenance, T-Rel, Modern Large Systems">
+
+<title>Trel-Special Section on 5G/6G Mobile Networks</title>
+<link rel="stylesheet" type="text/css" href="lib/main.css">
+<script type="text/javascript" src="lib/comm.js"></script>
+<script type="text/javascript">
+var ApTime,nAlpha;
+<!------------------------------------------------------------>
+function sel(oObj,nNum) {
+   oMyParent=oObj.parentNode;
+   oTopParent=oMyParent.parentNode;
+   nItem=oTopParent.getElementsByTagName(oMyParent.tagName).length;
+   for (i=0;i<nItem;i++) {
+       oTopParent.getElementsByTagName(oMyParent.tagName)[i].getElementsByTagName(oObj.tagName)[0].className='';
+   }
+   oObj.className='sel';
+   oObj.blur();
+   for (i=0;i<2;i++) {
+       $('container_'+i).className='hide';
+       }
+   $('container_'+nNum).className='show';
+   nAlpha=0;
+   fadeing(nNum);
+   return false;
+}
+<!------------------------------------------------------------>
+function fadeing(nNum) {
+  nAlpha+=10;
+  if (document.all)
+     $('container_'+nNum).style.filter='alpha(opacity='+nAlpha+')';
+  else
+     $('container_'+nNum).style.opacity=nAlpha/100;
+  if (nAlpha>=100)
+     clearTimeout(ApTime);
+  else
+     ApTime=setTimeout('fadeing('+nNum+')',60);
+}
+</script>
+<!-------------------------Body---------------------------------->
+</head>
+<body bgcolor="#FFFFFF">
+<style>
+* {margin: 0;padding: 0;}
+body {
+	background: url(https://pages-preview.herokuapp.com/images/bg-1.jpg) #eeeeee;
+}
+</style>
+<!---------------------------------------------------------------->
+
+<!--------------------------Banner-------------------------------->
+<!-- <div id="mid">
+<img src="lib/Banner.png" width="890" border="0">
+</div> -->
+<article>
+<header>
+	<a href="index.html">
+		<img class="img-fluid" src="index_files/Header.png"
+				alt="IEEE Transactions on Reliability Review Policy"/>
+	</a>
+</header>
+<!---------------------------------------------------------------->
+
+<div id="middle">
+<div id="main">
+<!-------------------------Menu Bar----------------------------------
+<div id="menu">
+<ul>
+
+<li><a href="index.html" title="Home IWSC'16" class="sel" onclick="return sel(this,0);">
+    Home
+    </a></li>
+</ul>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="container_0" class="show">
+<div align="center">
+<br>
+<font size="5" face="Georgia"><i>IEEE Transactions on Reliability</i></font><br>
+<br>
+<h1>
+    Special Section on AI and ML for Resilience Assessment and Enhancement of Cyber-Physical Systems
+</h1>
+<br>
+<h1>Call for Papers</h1>
+<br>
+</div>
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Background</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+In the era of Industrial 4.0, Cyber-Physical Systems (CPS) have become the core foundation in modern engineering systems due to their ubiquitous integration into physical infrastructure systems, online computing, and networking and control systems. For a CPS, resilience refers to the capacity of a system to recover from disruptions. Accurate resilience assessment and enhancement of CPSs are critical to ensure a reliable, stable and resilient CPS. To achieve this, the traditional empirical and data-driven modeling paradigm using human expertise and limited data to implement Prognostics and Health Management (PHM) and enhance the resilience of CPSs has become inadequate. In addition, as disturbances exist in the whole operating process, it�s very difficult, if not impossible, to realize assured resilient operations of CPSs using traditional methods. With the increasing adoption of digitalization of CPSs and availability of large quantity of data, Artificial Intelligence (AI) and Machine Learning (ML) methods have shown the promising capability to learn the underlying operating mechanisms directly from a wide range of heterogenous data sets. Therefore, AI and ML methods render more sophisticated solutions to resolve the reliability and resilience challenges in CPSs.
+
+</font>
+</p>
+<br>
+<p>
+<font size="3" face="Georgia">
+The goal of this special section is to promote and collect AI and ML based research advancements including both methodological and practical research in modeling, prediction or control for resilience assessment and enhancement in CPSs. Submissions will be reviewed and selected based on innovation, practical relevance, technical rigor and presentation.
+</font>
+</p>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Topics</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+    The topics of interest include, but are not limited to:
+ 
+</font>
+</p>
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>AI/ML methods for resilience assessment and enhancement</li>
+<li>AI/ML methods for PHM</li>
+<li>Degradation and resilience assessment for CPSs</li>
+<li>Digital twin for reliability and maintenance of CPSs</li>
+<li>Reinforcement learning for maintenance decision-making</li>
+<li>Predictive/prescriptive maintenance policies for CPSs</li>
+<li>AI/ML-based control, dispatching, planning for CPSs</li>
+<li>AI and ML-supported prognostic control in CPSs</li>
+<li>Resilience-oriented proactive engineering management using AI methods</li>
+<li>Other relevant AI and ML approaches for PHM of CPSs</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Submission Information</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="2" face="Georgia">
+We welcome high-quality submissions that are original work, not published, and not currently submitted elsewhere. We also encourage extensions to conference papers, unless prohibited by copyright, if there is a significant difference in technical content. Improvements such as adding a new case study or including a description of additional related studies do not satisfy this requirement. A description explaining the differences between the conference paper and the journal submission is required. The overlap between each submission and other articles, including the authors� own papers and dissertations, should be less than 30%.
+</font>
+</p>
+<br>
+<p>
+<font size="2" face="Georgia">
+All submitted papers will undergo a rigorous peer-review process and must conform to the double-column, the single-spaced format of printed articles in the IEEE Transactions on Reliability with all figures and tables embedded in the paper, rather than listed at the end or in the appendix. Refer to the special guidelines posted at
+<a href="https://mc.manuscriptcentral.com/tr-ieee" style="color: blue;" target="_blank">https://mc.manuscriptcentral.com/tr-ieee</a>.
+</font>
+</p>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Important Dates</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<table border="0">
+<!------------------------------------------------------------------------>
+    <tr>
+        <td><li>Submission Deadline:</li></td><td>10/01/2023, rolling review and publication</td>
+    </tr>
+    <tr>
+        <td><li>Publication Date:</li></td><td>Rolling</td>
+    </tr>
+<!------------------------------------------------------------------------>
+</tbody></table>
+</font>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Editor-in-Chief</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>Professor <a href="https://dsns.cs.nycu.edu.tw/ssp.php" style="color: blue;" target="_blank">Winston Shieh</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: shiuhpyng@ieee.org</li>
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Guest Editors</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+
+<!--<li>Dr. <a href="" style="color: blud;" target="_blank">Huimin Wang</a>-->
+<li>Dr. Huimin Wang
+    <br> University of Electronic Science and Technology, Sichuan, China
+    <br> Email: hmwang1206@163.com</li>
+<li>Dr. Jeff Voas
+    <br> US National Institute of Standards and Technology (NIST)
+    <br> Email: jeffrey.m.voas@gmail.com </li>
+<li>Professor <a href="https://www1.wne.edu/engineering/faculty.cfm?uid=1031" style="color: blud;" target="_blank">Z. Steven Li</a>
+    <br> Western New England University, USA
+    <br> Email: stevenli777@ieee.org</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+</div>
+
+</div></div></div>
+
+<footer>
+	<div class="container">
+		<small>
+			&copy; Copyright 2022 IEEE T-Rel - All rights reserved.
+		</small>
+	</div>
+</footer>
+</article>
+</body></html>

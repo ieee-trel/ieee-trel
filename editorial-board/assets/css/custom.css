@@ -1,0 +1,18 @@
+header {
+    background-color: #FBE9C5;
+}
+
+
+body {
+    font-family: Georgia;
+}
+
+.editor-card {
+    max-width: inherit;
+    width: 70%;
+}
+
+.footer-content-sponsor {
+    background-color: #FBE9C5; color:#8F0B07;
+}
+

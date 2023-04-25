@@ -1,0 +1,275 @@
+<!---------e!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">------------>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><meta name="description" content="Special Section on Enterprise Cybersecurity and Threat Intelligence at Scale, IEEE Transaction on Reliability">
+<meta name="keyword" content="Special Section on Reliability Prediction and Maintenance for Modern Large Systems, IEEE Transaction on Reliability, Prediction,Maintenance, T-Rel, Modern Large Systems">
+
+<title>Trel-Special Section on 5G/6G Mobile Networks</title>
+<link rel="stylesheet" type="text/css" href="lib/main.css">
+<script type="text/javascript" src="lib/comm.js"></script>
+<script type="text/javascript">
+var ApTime,nAlpha;
+<!------------------------------------------------------------>
+function sel(oObj,nNum) {
+   oMyParent=oObj.parentNode;
+   oTopParent=oMyParent.parentNode;
+   nItem=oTopParent.getElementsByTagName(oMyParent.tagName).length;
+   for (i=0;i<nItem;i++) {
+       oTopParent.getElementsByTagName(oMyParent.tagName)[i].getElementsByTagName(oObj.tagName)[0].className='';
+   }
+   oObj.className='sel';
+   oObj.blur();
+   for (i=0;i<2;i++) {
+       $('container_'+i).className='hide';
+       }
+   $('container_'+nNum).className='show';
+   nAlpha=0;
+   fadeing(nNum);
+   return false;
+}
+<!------------------------------------------------------------>
+function fadeing(nNum) {
+  nAlpha+=10;
+  if (document.all)
+     $('container_'+nNum).style.filter='alpha(opacity='+nAlpha+')';
+  else
+     $('container_'+nNum).style.opacity=nAlpha/100;
+  if (nAlpha>=100)
+     clearTimeout(ApTime);
+  else
+     ApTime=setTimeout('fadeing('+nNum+')',60);
+}
+</script>
+<!-------------------------Body---------------------------------->
+</head>
+<body bgcolor="#FFFFFF">
+<style>
+* {margin: 0;padding: 0;}
+body {
+	background: url(https://pages-preview.herokuapp.com/images/bg-1.jpg) #eeeeee;
+}
+</style>
+<!---------------------------------------------------------------->
+
+<!--------------------------Banner-------------------------------->
+<!-- <div id="mid">
+<img src="lib/Banner.png" width="890" border="0">
+</div> -->
+<article>
+<header>
+	<a href="index.html">
+		<img class="img-fluid" src="index_files/Header.png"
+				alt="IEEE Transactions on Reliability Review Policy"/>
+	</a>
+</header>
+<!---------------------------------------------------------------->
+
+<div id="middle">
+<div id="main">
+<!-------------------------Menu Bar----------------------------------
+<div id="menu">
+<ul>
+
+<li><a href="index.html" title="Home IWSC'16" class="sel" onclick="return sel(this,0);">
+    Home
+    </a></li>
+</ul>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="container_0" class="show">
+<div align="center">
+<br>
+<font size="5" face="Georgia"><i>IEEE Transactions on Reliability</i></font><br>
+<br>
+<h1>
+    Special Section on Enterprise Cybersecurity and Threat Intelligence at Scale
+</h1>
+<br>
+<h1>Call for Papers</h1>
+<br>
+</div>
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Background</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+Today's enterprise is by default connected in all aspects. The interactions with customers, businesses, and computer networks have created global-scale business opportunities and security risks for enterprises. Therefore, enterprises are in dire need of solutions that would maximize business opportunities while keeping the risk of security threats low. Unfortunately, the prevalence of security incidents indicates that existing security mechanisms have reached their limits in dealing with security risks at scale. A higher-level of automation and intelligence needs to be integrated into the security mechanisms to deal with the security threats faced by the enterprises today effectively. Meanwhile, classic fault tolerance mechanisms are also challenged by the scale of today's enterprise and the presence of malicious actors. New perspectives are needed for understanding how we can effectively manage the security risks faced by today's enterprise while maximizing the business strength at the same time.
+</font>
+</p>
+<br>
+<p>
+<font size="3" face="Georgia">
+In this special section, we solicit high-quality submissions related to enterprise cybersecurity and threat intelligence. In particular, we especially welcome papers that tackle problems pertaining to the asymmetric cyber warfare faced by the enterprises and the undesirable expansion of attack surfaces as we increase the scale of business.
+</font>
+</p>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Topics</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+    We welcome submissions in, but not limited to, the following topic areas:
+ 
+</font>
+</p>
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>Cyber threats and risk analysis</li>
+<li>Threat intelligence</li>
+<li>Automated incident response</li>
+<li>Decentralized finance security</li>
+<li>Security issues of decentralized blockchain applications</li>
+<li>Artificial intelligence/machine learning-based security</li>
+<li>Moving target defense for enterprises</li>
+<li>Cloud security</li>
+<li>Zero-trust architecture</li>
+<li>Cyber-physical systems security</li>
+<li>Advanced methods for error detection, fault tolerance, and debugging</li>
+<li>Software quality, metrics, and measurements, estimation, and prediction of quality/reliability</li>
+<li>Dependability, survivability, and resilience of software systems</li>
+<li>Systems (hardware and software) reliability engineering</li>
+<li>Productivity evaluation and improvement</li>
+<li>Services reliability engineering</li>
+<li>Supporting tools and automation</li>
+<li>Industry best practices</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Submission Information</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="2" face="Georgia">
+We welcome high-quality submissions that are original work, not published, and not currently submitted elsewhere. We also encourage extensions to conference papers, unless prohibited by copyright, if there is a significant difference in technical content. Improvements such as adding a new case study or including a description of additional related studies do not satisfy this requirement. A description explaining the differences between the conference paper and the journal submission is required. The overlap between each submission and other articles, including the authors' own papers and dissertations, should be less than 30%.
+</font>
+</p>
+<br>
+<p>
+<font size="2" face="Georgia">
+All submitted papers will undergo a rigorous peer-review process and must conform to the double-column, the single-spaced format of printed articles in the IEEE Transactions on Reliability with all figures and tables embedded in the paper, rather than listed at the end or in the appendix. Refer to the special guidelines posted at
+<a href="https://mc.manuscriptcentral.com/tr-ieee" style="color: blue;" target="_blank">https://mc.manuscriptcentral.com/tr-ieee</a>.
+</font>
+</p>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Important Dates</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<table border="0">
+<!------------------------------------------------------------------------>
+    <tr>
+        <td><li>Submission Deadline:</li></td><td>02/01/2024, rolling review and publication</td>
+    </tr>
+    <tr>
+        <td><li>Publication Date:</li></td><td>Rolling</td>
+    </tr>
+<!------------------------------------------------------------------------>
+</tbody></table>
+</font>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Editor-in-Chief</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>Professor <a href="https://dsns.cs.nycu.edu.tw/ssp.php" style="color: blue;" target="_blank">Winston Shieh</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: shiuhpyng@ieee.org</li>
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Guest Editors</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+
+<li>Professor <a href="http://www.cs.nctu.edu.tw/~ysw/" style="color: blue;" target="_blank">Yu-Sung Wu</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: ysw@nycu.edu.tw</li>
+<li>Dr. <a href="https://www.linkedin.com/in/gmhoward/" style="color: blue;" target="_blank">Gaspar Modelo-Howard</a>
+    <br> Palo Alto Networks, United States of America
+    <br> Email: gaspar@acm.org</li>
+<li>Professor <a href="https://research-repository.uwa.edu.au/en/persons/jin-hong" style="color: blue;" target="_blank">Jin Hong</a>
+    <br> School of Physics, Maths and Computing, Computer Science and Software Engineering, The University of Western Australia, Australia
+    <br> Email: jin.hong@uwa.edu.au</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+</div>
+
+</div></div></div>
+
+<footer>
+	<div class="container">
+		<small>
+			&copy; Copyright 2022 IEEE T-Rel - All rights reserved.
+		</small>
+	</div>
+</footer>
+</article>
+</body></html>

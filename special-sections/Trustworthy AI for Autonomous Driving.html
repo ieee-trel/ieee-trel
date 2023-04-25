@@ -1,0 +1,371 @@
+<!---------e!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">------------>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><meta name="description" content="Special Section on Trustworthy AI for Autonomous Driving, IEEE Transaction on Reliability">
+<meta name="keyword" content="Special Section on Reliability Prediction and Maintenance for Modern Large Systems, IEEE Transaction on Reliability, Prediction,Maintenance, T-Rel, Modern Large Systems">
+
+<title>Trel-Special Section on Trustworthy AI for Autonomous Driving</title>
+<link rel="stylesheet" type="text/css" href="lib/main.css">
+<script type="text/javascript" src="lib/comm.js"></script>
+<script type="text/javascript">
+var ApTime,nAlpha;
+<!------------------------------------------------------------>
+function sel(oObj,nNum) {
+   oMyParent=oObj.parentNode;
+   oTopParent=oMyParent.parentNode;
+   nItem=oTopParent.getElementsByTagName(oMyParent.tagName).length;
+   for (i=0;i<nItem;i++) {
+       oTopParent.getElementsByTagName(oMyParent.tagName)[i].getElementsByTagName(oObj.tagName)[0].className='';
+   }
+   oObj.className='sel';
+   oObj.blur();
+   for (i=0;i<2;i++) {
+       $('container_'+i).className='hide';
+       }
+   $('container_'+nNum).className='show';
+   nAlpha=0;
+   fadeing(nNum);
+   return false;
+}
+<!------------------------------------------------------------>
+function fadeing(nNum) {
+  nAlpha+=10;
+  if (document.all)
+     $('container_'+nNum).style.filter='alpha(opacity='+nAlpha+')';
+  else
+     $('container_'+nNum).style.opacity=nAlpha/100;
+  if (nAlpha>=100)
+     clearTimeout(ApTime);
+  else
+     ApTime=setTimeout('fadeing('+nNum+')',60);
+}
+</script>
+<!-------------------------Body---------------------------------->
+</head>
+<body bgcolor="#FFFFFF">
+<style>
+* {margin: 0;padding: 0;}
+body {
+	background: url(https://pages-preview.herokuapp.com/images/bg-1.jpg) #eeeeee;
+}
+</style>
+<!---------------------------------------------------------------->
+
+<!--------------------------Banner-------------------------------->
+<!-- <div id="mid">
+<img src="lib/Banner.png" width="890" border="0">
+</div> -->
+<article>
+<header>
+	<a href="index.html">
+		<img class="img-fluid" src="index_files/Header.png"
+				alt="IEEE Transactions on Reliability Review Policy"/>
+	</a>
+</header>
+<!---------------------------------------------------------------->
+
+<div id="middle">
+<div id="main">
+<!-------------------------Menu Bar----------------------------------
+<div id="menu">
+<ul>
+
+<li><a href="index.html" title="Home IWSC'16" class="sel" onclick="return sel(this,0);">
+    Home
+    </a></li>
+</ul>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="container_0" class="show">
+    <!------------------------------------------------------------------------
+    <div id="shadow">
+    <div id="frame">  
+    <!------------------------------------------------------------------------
+    <h2>About the Guest Editors</h2>
+    
+    <!------------------------------------------------------------------------
+    <br>
+    <p align="justify">
+    <font face="Georgia" size="3">
+    <b>Dr. Ming J Zuo</b> received the Bachelor of Science degree in Agricultural Engineering in 1982 from Shandong Institute of Technology, China, and the Master of Science degree in 1986 and the Ph.D. degree in 1989 both in Industrial Engineering from Iowa State University, U.S.A. He is currently a Full Professor in the Department of Mechanical Engineering at the University of Alberta, Canada. His research interests include system reliability analysis, maintenance modeling and optimization, signal processing, and fault diagnosis. He is an Associate Editor of IEEE Transactions on Reliability, Department Editor of IIE Transactions (2005-2008, 2011-present), Regional Editor for North and South American region for International Journal of Strategic Engineering Asset Management, and Editorial Board Member of Reliability Engineering and System Safety, Journal of Traffic and Transportation Engineering, International Journal of Quality, Reliability and Safety Engineering, and International Journal of Performability Engineering. He is a Fellow of the Institute of Industrial Engineers (IIE), Fellow of the Engineering Institute of Canada (EIC), Founding Fellow of the International Society of Engineering Asset Management (ISEAM), and Senior Member of IEEE.
+    </font>
+    </p>
+    <br>
+    <!------------------------------------------------------------------------
+    <hr>
+    <!------------------------------------------------------------------------
+    <br>
+    <p align="justify">
+    <font face="Georgia" size="3">
+    <b>Dr. Zhaojun Steven Li</b> is an Associate Professor at the Department of Industrial Engineering and Engineering Management, Western New England University in Springfield, MA. Dr. Li&rsquo;s research interests focus on Reliability, Quality, and Safety Engineering in Product Design, Systems Engineering and Its Applications in New Product Development, Diagnostics and Prognostics of Complex Engineered Systems, and Engineering Management. He earned his doctorate in Industrial Engineering from the University of Washington in 2011. He is an ASQ certified Reliability Engineer, and Caterpillar Six Sigma Black Belt. Dr. Li has publications in many journals including IIE Transactions on Quality and Reliability, Reliability Engineering and System Safety, Journal of Manufacturing Systems, IEEE Transactions on Reliability, and Quality Engineering. His most recent industry position was a reliability team leader with Caterpillar Rail Division to support the company&rsquo;s Tier 4 Locomotive New Four Stroke Engine and Gas-Diesel Dual Fuel Engine Development.
+    </font>
+    </p>
+    <br>
+    <!------------------------------------------------------------------------
+    <hr>
+    <!------------------------------------------------------------------------
+    <br>
+    <p align="justify">
+    <font face="Georgia" size="3">
+    <b>Dr. Xihui (Larry) Liang</b> is an Assistant Professor in the Department of Mechanical Engineering, University of Manitoba, Canada. He received his Bachelor&rsquo;s and Master&rsquo;s degrees in Mechanical Engineering from Shandong University, China, in 2007 and 2009, respectively, and his PhD degree in Mechanical Engineering from the University of Alberta, Canda, in 2016. After that, he worked as a Postdoc Research Fellow at the University of Alberta for about two years. His specialty areas mainly include condition monitoring, reliability analysis, predictive maintenance and intelligent manufacturing. He has authored/coauthored more than 40 articles in prestigious journals, such as IEEE Transactions on Industrial Electronics, Mechanical Systems and Signal Processing and Reliability Engineering & System Safety.
+    </font>
+    </p>
+    <br>
+    <!------------------------------------------------------------------------
+    <hr>
+    <!------------------------------------------------------------------------
+    <br>
+    <p align="justify">
+    <font face="Georgia" size="3">
+    <b>Dr. Sajad Saraygord Afshari</b> received his PhD degree from the Sharif University of Technology, Iran, with a focus on stochastic dynamics and reliability-based control of structures. His PhD thesis title is &ldquo;Active Reliability Based Failure Prediction and Control of Wing Structures via Online SHM Using Hybrid Algorithms and Experimental Data&rdquo; He is experienced in numerical simulation, control engineering, experimental mechanics, reliability analysis, and machine learning techniques. He is currently working as a postdoctoral fellow at the Intelligent Monitoring and Control Laboratory in the Department of Mechanical Engineering at the University of Manitoba. His current mission is the development of probabilistic and stochastic machine learning methods for improving design, manufacturing, and performance of industrial products.
+    </font>
+    </p>
+    <br>
+    <!------------------------------------------------------------------------
+    </div>
+    </div>
+    <!------------------------------------------------------------------------
+    
+    </div>
+    <!---------------------------------------------------------------
+    
+    <!---------------------------------------------------------------
+    <div id="container_1" class="hide">
+    <h2>Keep 1</h2>
+    <br>
+    <p align="justify">
+    <font face="Georgia" size="3">
+    </font>
+    </p>
+    <br><br>            
+    
+    </div>
+    <!---------------------------------------------------------------
+    
+    <!------------------------ Best Paper Award --------------------------
+    <div id="container_2" class="hide">
+    <h2>Keep 2</h2>
+    <br>
+    <p align="justify">
+    <font face="Georgia" size="3">
+    </font>
+    </p>
+    </div>
+    
+    <!--------------------------------------------------------------->
+<div align="center">
+<br>
+<font size="5" face="Georgia"><i>IEEE Transactions on Reliability</i></font><br>
+<br>
+<h1>
+    Special Section on Trustworthy AI for Autonomous Driving
+</h1>
+<br>
+<h1>Call for Papers</h1>
+<br>
+</div>
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Background</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+    Autonomous driving technologies have made phenomenal progress and shown significant societal and economic
+impacts. Recent breakthroughs in artificial intelligence (AI), especially deep learning technologies, demonstrate
+their importance in developing autonomous driving systems. However, due to the limited understanding of the
+underlying deep learning theories and the vulnerability of the technologies to out-of-distribution and adversarial
+scenarios, there is an increasing concern if decisions made by the systems can be trusted in life-critical use cases.
+Moreover, new AI approaches for autonomous driving introduces new challenges for software system verification
+of reliability, security, and safety.
+</font>
+</p>
+<br>
+<p>
+<font size="3" face="Georgia">
+    To address the challenges, IEEE Transactions on Reliability will have a special section soliciting original work
+that makes novel theoretical or practical contributions to enable trustworthy AI for autonomous driving.
+Specifically, through the lens of trustworthy computing, trustworthy AI concerns the reliability, security, and
+safety of AI software systems for autonomous driving. In addition, systems should be extended with properties
+such as fairness, robustness, interpretability, and more. Furthermore, a whole new set of verification techniques
+should be invented to handle novel artifacts. Submissions will be reviewed and selected based on innovation,
+technical correctness, presentation, and practical relevance.
+</font>
+</p>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Topics</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="3" face="Georgia">
+    We welcome submissions in, but not limited to, the following topic areas:
+ 
+</font>
+</p>
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>Reliability, security, and safety of autonomous driving systems</li>
+<li>Trustworthy AI software or system architecture</li>
+<li>Formal methods for verification with extensions of fairness, robustness, and interpretability</li>
+<li>Explainable, transparent, interpretable, verifiable, and certifiable artificial intelligence systems</li>
+<li>Advice-taking and advisable autonomous driving systems</li>
+<li>Privacy-preserving and responsible artificial intelligence</li>
+<li>Data and model governance</li>
+<li>Dataset bias</li>
+<li>Out-of-distribution detection</li>
+<li>Adversarial attack and defense</li>
+<li>Deep traffic scene understanding and comprehension</li>
+<li>Risk assessment and risk-aware decision making in traffic scenes</li>
+<li>Uncertainty modeling and runtime verification</li>
+
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Submission Information</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<p>
+<font size="2" face="Georgia">
+We welcome high-quality submissions that are original work, not published, and not currently submitted elsewhere.
+We also encourage extensions to conference papers, unless prohibited by copyright, if there is a significant
+difference in technical content. Improvements such as adding a new case study or including a description of
+additional related studies do not satisfy this requirement. A description explaining the differences between the
+conference paper and the journal submission is required. The overlap between each submission and other articles,
+including the authors' own papers and dissertations, should be less than 30%.
+</font>
+</p>
+<br>
+<p>
+<font size="2" face="Georgia">
+All submitted papers will undergo a rigorous peer-review process and must conform to the double-column, the
+single-spaced format of printed articles in the IEEE Transactions on Reliability with all figures and tables
+embedded in the paper, rather than listed at the end or in the appendix. Refer to the special guidelines posted at
+<a href="https://mc.manuscriptcentral.com/tr-ieee" style="color: blue;" target="_blank">https://mc.manuscriptcentral.com/tr-ieee</a>.
+</font>
+</p>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Important Dates</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<table border="0">
+<!------------------------------------------------------------------------>
+    <tr>
+        <td><li>Submission Deadline:</li></td><td>07/01/2023, rolling review and publication</td>
+    </tr>
+    <tr>
+        <td><li>Publication Date:</li></td><td>Rolling</td>
+    </tr>
+<!------------------------------------------------------------------------>
+</tbody></table>
+</font>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Editor-in-Chief</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+<li>Professor <a href="https://dsns.cs.nycu.edu.tw/ssp.php" style="color: blue;" target="_blank">Winston Shieh</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: shiuhpyng@ieee.org</li>
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------>
+<div id="shadow">
+<div id="frame">  
+<!------------------------------------------------------------------------>
+<h2>Guest Editors</h2>
+
+<!------------------------------------------------------------------------>
+<br>
+<font size="2" face="Georgia">
+<ul>
+<!------------------------------------------------------------------------>
+
+<li>Professor <a href="https://sites.google.com/site/yitingchen0524/" style="color: blue;" target="_blank">Yi-Ting Chen</a>
+    <br> Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan 
+    <br> Email: ychen@cs.nycu.edu.tw</li>
+<li>Professor <a href="https://koreauniv.pure.elsevier.com/en/persons/jinkyu-kim" style="color: blue;" target="_blank">Jinkyu Kim</a>
+    <br> Department of Computer Science and Engineering, Korea University, Korea
+    <br> Email: jinkyukim@korea.ac.kr</li>
+<li>Professor <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html" style="color: blue;" target="_blank">Ding Zhao</a>
+    <br> Department of Mechanical Engineering, Carnegie Mellon University, USA 
+    <br> Email: dingzhao@andrew.cmu.edu</li>
+<li>Doctor <a href="https://www.linkedin.com/in/olafopdencamp/" style="color: blue;" target="_blank">Olaf Op den Camp</a>
+    <br> Netherlands Organisation for Applied Scientific Research, Netherlands 
+    <br> Email: olaf.opdencamp@tno.nl</li>
+<!------------------------------------------------------------------------>
+</ul>
+</font>
+<!------------------------------------------------------------------------>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+
+</div>
+<!-- <div class="foot">
+    <div class="copyright">Copyright &#169; 2022  All rights reserved.  
+</div> -->
+
+
+</div></div></div>
+
+<footer>
+	<div class="container">
+		<small>
+			&copy; Copyright 2022 IEEE T-Rel - All rights reserved.
+		</small>
+	</div>
+</footer>
+</article>
+</body></html>

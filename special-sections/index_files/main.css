@@ -1,0 +1,202 @@
+* {margin: 0;padding: 0;}
+
+body {
+	/* padding: 30px 0 20px; */
+	background: url(https://pages-preview.herokuapp.com/images/bg-new.jpg) #eeeeee;
+	text-align: center;
+	font-family: Georgia;
+	font-size: 13px;
+}
+
+img {
+	border: 0;
+}
+ul {
+	list-style: none;
+}
+a:link,a:visited {
+	text-decoration: none;
+    color: blue;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: red;
+}
+.flo_r {
+	float: right;
+}
+#middle{
+	margin: auto;
+	width: 930px;
+	
+}
+#main {
+	overflow: hidden;
+	margin: 0 20px;
+
+	height: auto !important;
+	overflow:visible;
+}
+#menu {
+	float: left;
+	padding-top: 5px;
+	padding-right:5px;
+	text-align: left;
+	text-indent: 1em;
+	color: #fff;
+	width: 230px;
+	height: 350px;
+}
+#menu a {
+	display: block;
+	text-decoration: none;
+	line-height: 38px;
+	font-size: 15px;
+	color:#cccccc;
+	height: 38px;
+        font-weight: bold;
+	background: url(https://pages-preview.herokuapp.com/images/selmenu2.fw.png) no-repeat;
+}
+#menu a:hover {
+	background: url(https://pages-preview.herokuapp.com/images/selmenu3.fw.png) no-repeat;
+	color: #ffffff;
+	font-size:13px;
+}
+.sel {
+	background: url(https://pages-preview.herokuapp.com/images/selmenu1.fw.png) no-repeat !important;
+	color: #04B45F !important;
+    font-size:15px !important;
+    font-weight:bold;
+
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+	overflow: auto;
+	text-align: left;
+	color: black;
+	/*IE 6 only*/
+                 zoom:1;
+}
+.show h2 {
+	font-size: 16px;
+}
+.show h3 {
+	font-size: 14px;
+}
+.show p {
+	line-height: 200%;
+	text-indent: 0em;
+	font-size: 12px;
+	text-align: justify;
+}
+.showicon {
+	margin: 10px 0 10px 0;
+	list-style: disc;
+}
+.show table {
+	/*border-collapse: collapse;*/
+	width:100%;
+}
+
+.td1 {
+    width: 50%;
+}
+
+.td2 {
+    width: 100%;   
+}
+
+#nowrap {
+    white-space: nowrap; width:1%;
+}
+
+#none_ul {
+    list-style:none;
+}
+
+#button {
+    margin: 8px 0 0 2px; font-size: medium;
+}
+
+.show ul {
+	margin-left: 20px; 
+	list-style:disc;
+	line-height: 20px;
+}
+.show li{
+	margin-bottom: 1px;
+	font-size: 16px;
+}
+#link {
+	overflow: hidden;
+	margin: 0 20px;
+	padding: 0px 0;
+	background-color: #3C7DBF;
+	height: 1px;
+}
+#link ul li {
+	float: left;
+	display: inline;
+	margin-left: 10px;
+}
+
+.copyright {
+	height:50px;
+	line-height:1.5em;
+}
+
+#frame {
+	background-color:#FFF;
+	padding: 15px;
+}
+
+#shadow {
+	background: url(https://pages-preview.herokuapp.com/images/bg-2.jpg) repeat #FFF;
+	padding: 7px;
+	margin-bottom: 6px;
+}
+
+.none {
+    display: none;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	background-color: #FBE9C5;
+	height: 17vh;
+}
+
+header img{
+	height: 100%;
+	width: auto;
+}
+
+#middle {
+	flex-grow: 1;
+}
+
+footer {
+	background-color: #FBE9C5;
+	color: #8F0B07;
+	padding: 30px;
+}
+
+.foot { 
+    clear: both;
+	font-style: italic;
+	font-size: 12px;
+}
+footer .container {
+	padding: 0 22%;
+	text-align: center;
+}
